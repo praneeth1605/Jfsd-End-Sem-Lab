@@ -61,7 +61,7 @@ public class ClientDemo
       Session se = sf.openSession();
       
       se.getTransaction().begin();
-      se.persist(d);
+      se.persist(se);
       se.getTransaction().commit();
       
       System.out.println("Data inserted successfully");
